@@ -1,102 +1,156 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-:root{
-    --green:#27ae60;
-    --dark-color:#219150;
-    --black:#444;
-   --light-color:#666;
-   --border:.1rem solid rgba(0,0,0,.1)
-   --border-hover:.1rem solid var(--black);
-   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-}
+
 *{
-    font-family:'Poppins',sans-serif ;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: all .2s linear;
-    transition: width none;
-    
+    font-family: Poppins ,sans-serif;
 }
-html{
-    font-size:62.5%;
-    overflow-x:hidden;
-    scroll-padding-top:5rem;
-    scroll-behavior:smooth;
+section {
+ background-color: #F4F3EF;
 }
-html::-webkit-scrollbar{
-    width: 1rem;
-}
-html::-webkit-scrollbar-track{
-    background: transparent;
-}
-html::-webkit-scrollbar-thumb{
-    background:var(--black)  ;
-}
-.header .header-1{
+section nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #364C63;
     background: #fff;
-    padding:1.5rem 9%;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+
+}
+section nav .logo img {
+    width: 80px;
+    cursor: pointer;
+    margin:8px 0;
+}
+section nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+section nav li a{
+    color:#000;
+    text-decoration: none;
+    list-style: none;
+
+
+}
+section nav li a:hover{
+    color: #586f88;
+  
+}
+   
+.social-icon i{
+    margin: 0 5px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+.social-icon i:hover{
+    color: #364C63;
+    transform: scale(1.3);
+
+}
+/* main-section */
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 10%;
+}
+section .main h1{
+    position: relative;
+font-size: 55px;
+top: 40px;
+left: 25px;
+}
+section .main h1 span{
+    color:#364C63
+}
+section .main p{
+    width: 640px;
+    text-align: justify;
+    line-height: 25px;
+    position: relative;
+    top: 50px;
+    left: 25px;
+}
+section .main .main-tag .main-btn{
+    background: #364C63;
+    padding: 10px 20px;
+    position: relative;
+    top: 100px;
+    left: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;}
+
+section .main .img{
+    width: 780px;
+    position: relative;
+    top: 90px;
+    left: 20px;
+}
+.services{
+    width: 100%;
+    height: auto;
+    margin: 35px 0;
+}
+.services .service-box{
+    width: 95%;
+    margin:0 auto ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+
+}
+.services .service-box .service-card{
+    text-align: center;
+    width: 310px;
+    height: auto;
+    box-shadow: 0 0 8px#364C63 ;
+    padding:15px 10px ;
+
+}
+.services .service-box .service-card i{
+    color:#364C63;
+    font-size: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.services .service-box .service-card h3{
+    margin-bottom:10px ;}
+/* about */
+.about{
+    width: 100%;
+    height: auto;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.header .header-1.logo{
-    font-size: 200px;
-    font-weight:bolder;
-    color:var(--black);
-    width: 200px;
 
-
-}
-.header .header-1.logo i{
-    color:var(--green);
-}
-
-
-.header .header-1 .search-form{
-    width: 50rem;
-    height: 5rem;
-    border: var(--border);
-    overflow: hidden;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    border-radius: .5rem;
-}
-header .header-1 .search-form input{
-    font-size: 1.6rem;
-    padding: 0 1.2rem;
-    height: 100%;
-    width: 100%;
-    text-transform: none;
-    color: var(--black);
-}
-header .header-1 .search-form label{
-    font-size: 2.5rem;
-    padding-right: 1.5rem;
-    color: var(--black);
-    cursor: pointer;
+.about .about-img img{
+    width: 800px;
+} 
+.about .about-tag p{
+    line-height: 22px;
+    width: 450px;
+    text-align: justify;
+    margin-bottom: 15px;
 
 }
-header .header-1 .search-form label:hover{
-    color: var(--green) ;
-}
-header .header-1 .icon div,
-.header .header-1 .icon a:{
-font-size: 2.5rem;
-margin-left: 1.5rem;
-color: var(--black);
-cursor: pointer;
+.about .about-tag .about-btn{
+    padding:10px 20px;
+    background-color:#364C63;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    top: 50px;
 }
 
-header .header-1 .icon div:hover,
-.header .header-1 .icon a :hover{
-    color: var(--green) ;                       
-}
-#search-btn{
-    display: none;
-}
 
