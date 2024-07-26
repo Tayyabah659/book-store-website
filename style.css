@@ -152,5 +152,81 @@ section .main .img{
     position: relative;
     top: 50px;
 }
+/* featured-books */
+.featured-books{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+.featured-books h1{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    margin-bottom: 30px;
+    font-size: 45px;
+    
+}
 
+.featured-books  .featured-books-box{
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr ;
+    overflow: hidden;
+    overflow-x:scroll;
+}
+.featured-books  .featured-books-box .featured-books-card{
+    width: 400px;
+    height: 700px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+.featured-books  .featured-books-box .featured-books-card:hover{
+    box-shadow: 0 0 5px #364C63;
 
+    }
+    .featured-books  .featured-books-box .featured-books-card .featured-book-tag h2{
+        margin: 12px;
+    }
+    .featured-books  .featured-books-box .featured-books-card .featured-book-tag.writer{
+        color: #919191;
+    }
+    .featured-books  .featured-books-box .featured-books-card .featured-book-tag.catagories{
+        color: #364C63;
+        margin-top: 8px;
+    }
+    
+ .featured-book-img{
+    width: 150px;
+    height: 40px;
+}
+.featured-books  .featured-books-box .featured-books-card .featured-book-tag.book-price{
+    margin-top: 8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+}
+
+.featured-books  .featured-books-box .featured-books-card .featured-book-tag del{
+    font-weight: 100;
+    padding:  0 15px;
+}
+.featured-books  .featured-books-box .featured-books-card .featured-book-tag .f-btn{
+
+    padding:  8px 20px;
+    border: 2px solid #364C63;
+    text-decoration: none;
+    color: #000;
+    
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 15px;
+
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px rgba(0,0, 0, 0.2);
+}
